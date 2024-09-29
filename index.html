@@ -1,0 +1,1041 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>Institute Of Computer Engineering Technology </title>
+	<!-- Required meta tags -->
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<meta name="description" content="Discover iCET, where aspiring software engineers gain hands-on skills for real-world success. Transform your future with practical software training">
+	<!-- Bootstrap CSS v5.2.1 -->
+	<link href="./assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+	<script src="https://kit.fontawesome.com/61d60b83f4.js" crossorigin="anonymous"></script>
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="./img/favicon/site.webmanifest">
+	<style>
+		/*Inicia cambio de estilo de scroll bar*/
+		::-webkit-scrollbar {
+			background: #d4d4d4;
+			width: 8px;
+			height: 8px;
+		}
+
+		::-webkit-scrollbar-track {
+			background: #e1e1e1;
+			border-radius: 4px;
+		}
+
+		::-webkit-scrollbar-thumb:hover {
+			background: #b3b3b3;
+			box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+		}
+
+		::-webkit-scrollbar-thumb:active {
+			background-color: #999999;
+		}
+
+		::-webkit-scrollbar-thumb {
+			background: #ccc;
+			border-radius: 4px;
+		}
+
+		/*Finaliza cambio de estilo scroll bar*/
+		/*CAROUSEL al contenedor padre se le deja el tamaño del 100%*/
+		#carousel {
+			width: 100%;
+			height: 100%;
+		}
+
+		/*en la clase del carousel se realiza independiente para que ahi pueda agregar el escroll X*/
+		.carousel {
+			overflow-x: scroll;
+		}
+
+		/*el texto ya esta centrado ya que se le dio el ancho del 100% al contenedor padre*/
+		#carousel p {
+			color: #134A73;
+			font-family: sans-serif;
+			font-size: 20px;
+			text-align: center;
+			margin-top: 3%;
+			margin-bottom: 40px;
+		}
+
+		/* se le da el tamaño que se desea para la visulizacion de las imagenes ya que en el contenedor de la clase de carousel es donde estara creado el scroll*/
+		#carousel .gallery {
+			display: flex;
+			flex-direction: row;
+			width: 2500px;
+			height: 70vh;
+		}
+
+		#carousel .item {
+			flex: 1;
+			height: 100%;
+			background-position: center;
+			background-size: cover;
+			background-repeat: none;
+			transition: flex 0.8s ease;
+		}
+
+		#carousel .item:hover {
+			flex: 15%;
+		}
+
+		/*fotos*/
+
+		#carousel .item-1 {
+			background-image: url('./assets/success/akindu.jpg');
+		}
+
+		#carousel .item-2 {
+			background-image: url('./assets/success/binath.jpg');
+		}
+
+		#carousel .item-3 {
+			background-image: url('./assets/success/chirath.jpg');
+		}
+
+		#carousel .item-4 {
+			background-image: url('./assets/success/harsha.jpg');
+		}
+
+		#carousel .item-5 {
+			background-image: url('./assets/success/havindu.jpg');
+		}
+
+		#carousel .item-6 {
+			background-image: url('./assets/success/shan.jpg');
+		}
+
+		#carousel .item-7 {
+			background-image: url('./assets/success/nuwin.jpg');
+		}
+
+		#carousel .item-8 {
+			background-image: url('./assets/success/rakitha.jpg');
+		}
+
+		#carousel .item-9 {
+			background-image: url('./assets/success/noah.jpg');
+		}
+
+		#carousel .item-10 {
+			background-image: url('./assets/success/');
+		}
+
+		#carousel .item-11 {
+			background-image: url('./assets/success/');
+		}
+
+		#carousel .item-12 {
+			background-image: url('./assets/success/');
+		}
+
+		/*se agrego el cursos para que sepa que esta en cada imagen*/
+		.gallery .item:hover {
+			cursor: pointer;
+		}
+	</style>
+</head>
+
+<body>
+	<header class="fixed-top">
+		<div class="container-fluid">
+			<div class="row" style="background-color: #233857;">
+				<div class="col-md-12 py-2 text-light d-inline">
+					<div class="px-3 text-start d-inline"><i class="fa-solid fa-phone"></i><a class="text-light" style="text-decoration: none; margin-left:10px; font-size:16px;" href="tel:+97582818259">0705 805 805</a></div>
+					<div class="px-3 float-end d-inline"><i class="fa-brands fa-youtube me-2"></i><i class="fa-brands fa-square-facebook me-2"></i><i class="fa-brands fa-linkedin"></i></div>
+				</div>
+			</div>
+		</div>
+		<!-- place navbar here -->
+		<nav class="navbar navbar-inverse navbar-expand-lg navbar-dark bg-dark">
+			<div class="container-fluid">
+				<a class="navbar-brand" aria-label="Smart path to start your software engineering career" href="./"><img src="./assets/img/iCETlogoBNW.png"  style="visibility:hidden;" class="px-2" width="60px" alt=""> </a>
+				<img src="./assets/img/iCET_[ ]_logo.png" style="position: absolute; z-index:1; " class="px-2 d-none d-lg-block" width="80px" alt="">
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarText">
+					<ul class="navbar-nav nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="./">Home</a><span class="hover"></span>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="https://www.icet.lk/about-us">About</a><span class="hover"></span>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="https://www.icet.lk/courses">Courses</a><span class="hover"></span>
+						</li>
+						<!-- <li class="nav-item">
+							<a class="nav-link" href="#">Diploma Courses</a><span class="hover"></span>
+						</li> -->
+						<li class="nav-item">
+							<a class="nav-link" href="https://www.icet.lk/icet-blog">Research and Innovation</a><span class="hover"></span>
+						</li>
+						<!-- <li class="nav-item">
+							<a class="nav-link" href="#">Success Stories</a><span class="hover"></span>
+						</li> -->
+						<li class="nav-item">
+							<a class="nav-link" href="https://www.icet.lk/contact-us">Contact Us</a><span class="hover"></span>
+						</li>
+					</ul>
+					<span class="navbar-text">
+					<a href="https://icetlms.lk/login/index.php" target="_blank" class="btn btn-sm btn-success text-uppercase">Student Portal</a>
+					</span>
+				</div>
+			</div>
+		</nav>
+
+	</header>	<carousel>
+		<div id="carouselExampleDark" class="carousel carousel-dark slide" style="margin-top:85px;" data-bs-ride="carousel">
+			<div class="carousel-indicators">
+				<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+				<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+			</div>
+			<div class="carousel-inner">
+				<div class="carousel-item active" data-bs-interval="10000" style="background-image: url('./assets/img/slider-1.png');  background-size: cover;">
+					<img src="./assets/img/hero_overlay_2.png" width="100%" height="44.2%" class="d-block w-100" style="visibility:hidden;" alt="Software Engineering Degree">
+					<!-- <div class="carousel-caption d-none d-md-block text-light text-start" style="margin-bottom: 200px !important;">
+						<span class="fs-1  slideFont text-orange">Revolutionizing Software Education</span>
+						<p class="ms-3 mt-2">We Lead the Way in Innovative Learning Approaches.</p>
+					</div> -->
+				</div>
+				<!-- <div class="carousel-item active" data-bs-interval="10000" style="background-image: url('./assets/img/hero_bg_2_1.png');">
+					<img src="./assets/img/hero_overlay_2.png" class="d-block w-100" alt="Smath Path to Start a IT Degree">
+					<div class="carousel-caption d-none d-md-block text-light text-start" style="margin-bottom: 200px !important;">
+						<span class="fs-1  slideFont text-orange">Breaking Barriers</span>
+						<p class="ms-3 mt-2">We Put Our Best Efforts in Redefining Software Engineering Education to Match with Industry Requirements. </p>
+					</div>
+				</div> -->
+				<!-- <div class="carousel-item active" data-bs-interval="10000" style="background-image: url('./assets/img/hero_bg_2_1.png');">
+					<img src="./assets/img/hero_overlay_2.png" class="d-block w-100" alt="Smath Path to Start a Software Engineering Degree">
+					<div class="carousel-caption d-none d-md-block text-light text-start" style="margin-bottom: 200px !important;">
+						<span class="fs-1  slideFont text-orange">Forging the Future</span>
+						<p class="ms-3 mt-2">We Want to Play a Pivotal Role in Bridging the Industry's Knowledge Gap.</p>
+					</div>
+				</div> -->
+				<!-- <div class="carousel-item active" data-bs-interval="10000" style="background-image: url('./assets/img/hero_bg_2_1.png');">
+					<img src="./assets/img/hero_overlay_2.png" class="d-block w-100" alt="Smath Path to Start a Software Engineering Degree">
+					<div class="carousel-caption d-none d-md-block text-light text-start" style="margin-bottom: 200px !important;">
+						<span class="fs-1 philosopher-regular text-orange">We are pioneers in </span>
+						<h1 class="pt-3 philosopher-regular"> <span class="fw-bold" style="color:#00984a;"> - </span> Project Management <br> <span class="fw-bold" style="color:#00984a;"> - </span> Engineering Consultancy<br>
+							<span class="fw-bold" style="color:#00984a;"> - </span> Technical Training
+						</h1>
+					</div>
+				</div> -->
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+	</carousel>
+	<describe>
+		<div class="container py-5">
+			<div class="row">
+				<div class="col-lg-6 col-md-12 col-12 py-3 d-none d-lg-block">
+					<div data-aos="fade-up" data-aos-duration="2000">
+						<img src="./assets/img/home_one.png" class="img-fluid" alt="Software Engineering Training Institute">
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-12 col-12 py-3">
+					<p class="fs-3 text-orange">Bridge Your Intelligence to a Software Career: </p>
+					<h1 class="text-uppercase philosopher-regular" style="color:#233857; text-align:justify;">No Degree Required </h1>
+					<p class="text-muted">
+						At iCET, we firmly believe that the path to becoming a successful software engineer doesn't necessarily require a traditional degree.
+						<br>
+						Our programs are designed to provide individuals with the knowledge, skills, and practical experience needed to excel in the field of software engineering, regardless of their educational background.
+						<br>
+						We recognize that intelligence, passion, and dedication are far more important than a piece of paper, and our curriculum is tailored to unlock the full potential of every student, regardless of their academic history.
+
+						<br>
+						<b>Hands on Project Exposure: </b>
+						We recognize that the traditional path to a software engineering career may not suit everyone. That's why we offer a dynamic approach that goes beyond the confines of traditional degree requirements.
+						<br>
+						Through hands-on projects, immersive real-world experiences, and personalized guidance from industry professionals, we mentor individuals to develop the skills and confidence needed to thrive in the software engineering field.
+						<br>
+						With iCET, you can start your software engineering journey knowing that your success is determined by your passion, dedication, and ability to adapt, rather than by traditional academic credentials alone.
+						<br>
+						Our programs are designed to guide students from all backgrounds to pursue a career in software engineering with confidence and competence, setting them on a path to success in this rapidly evolving industry.
+					</p>
+
+				</div>
+			</div>
+		</div>
+		<!-- <div class="container-fluid mb-5">
+			<div class="row">
+				<div class="container-fluid" style="background-color: #00984a;">
+					<div class="row">
+						<div class="col-md-12"> <br> </div>
+					</div>
+				</div>
+				<div class="col-md-9 p-4" style="background-color:#1B4F72;">
+					<img src="./assets/img/iCETlogowhite.png" width="130px" class="my-3" alt="Software Engineering Node Courses">
+					<span class="fw-bold" style="color:#A6ACAF;">Embarking on a Path of Excellence:</span>
+					<h3 class="text-warning">A Glimpse into the iCET Leadership+ Experience</h3>
+					<small class="text-light">At iCET, we don't just offer courses; we pave the way for a transformative journey. Our Leadership+ program goes beyond conventional learning, cultivating skills that extend far into the realm of leadership. As you traverse this educational landscape, expect more than just knowledge — anticipate a holistic experience that nurtures qualities essential for leadership in the dynamic world of technology. Join us at iCET as we redefine the trajectory of your educational journey and empower you not just to learn but to lead</small>
+				</div>
+				<div class="col-md-3 p-4" style="background-color:#1B4F72;">
+				</div>
+				<div class="col-md-4 py-5 px-5" style="background-color: #1E8449;">
+            <img src="./assets/img/iCETlogowhite.png" width="130px" class="my-3 d-inline" alt="Software Engineering Node Courses">
+            <a href="https://icetlms.lk/login/index.php" class="d-inline ms-5" style="text-decoration: none; ">
+               <button class="btn bg-light pt-3"> <h3 class="fw-bold text-success">Apply to iCET</h3></button>
+            </a>
+        </div> 
+			</div>
+		</div> -->
+
+		<main class="py-5">
+
+			<main class="responsive-wrapper">
+				<div class="page-title">
+					<h1>Latest News & Updates</h1>
+				</div>
+				<div class="magazine-layout">
+					<div class="magazine-column">
+						<article class="article">
+							<figure class="article-img">
+								<img src="./assets/img/studay.jpg" alt="Software Engineering Courses" />
+							</figure>
+							<h2 class="article-title article-title--large">
+								<a href="#" class="article-link">
+									iCET Partnership with Generation Alpha: Guiding Sri Lankan Youth Towards Innovation and Entrepreneurship</a>
+							</h2>
+							<div class="article-excerpt">
+								<p>
+									We are thrilled to announce our partnership with Generation Alpha, a dynamic initiative spearheaded by the visionary entrepreneur Miuli Kalubowila. Under her leadership as the founder and CEO, Generation Alpha is dedicated to fostering education innovation and entrepreneurship among Sri Lankan youth.
+
+								</p>
+								<p id="alpha" style="display: none;">
+									At iCET, we are committed to providing our students with the tools and resources they need to thrive in the ever-evolving landscape of the software industry. Through this partnership, we aim to empower our students to bring their innovative ideas to life and translate them into real-world applications.
+									<br> <br>
+									One of the key objectives of our collaboration with Generation Alpha is to create a supportive ecosystem where young innovators can access mentorship, resources, and networking opportunities. By connecting students with industry experts, investors, and mentors, we are providing them with invaluable insights and guidance to help them succeed in their entrepreneurial endeavours.
+									<br> <br>
+									Additionally, our partnership with Generation Alpha offers students the opportunity to develop essential leadership and soft skills that are vital for success in the software industry. Through workshops, seminars, and hands-on training sessions, students will gain practical experience and enhance their professional portfolios, preparing them for fulfilling careers in the field of software engineering.
+									<br> <br>
+									We are excited about the possibilities that this partnership holds for our students and are confident that it will enable them to reach new heights of innovation and excellence. Together with Generation Alpha, we are shaping the future of software engineering in Sri Lanka and beyond.
+								</p>
+								<p class="text-success text-end" id="alphaB">+ Read More</p>
+							</div>
+						</article>
+						<article class="article">
+							<figure class="article-img">
+								<img src="./assets/img/awrudu.JPG" alt="Software Engineering Courses" />
+							</figure>
+							<h2 class="article-title article-title--medium">
+								<a href="#" class="article-link">Embracing Traditions and Celebrating Unity: iCET's New Year Festival 2024</a>
+							</h2>
+							<div class="article-creditation">
+								<p>At iCET, we believe in the power of tradition, community, and celebration. That's why we came together as one big family to ring in the Sinhala and Tamil New Year with our annual "Soorya Prasanwadaya" festival. Held at the municipal ground in Panadura, this joyous event was a testament to the rich cultural heritage and spirit of unity that defines our institute.</p>
+							</div>
+						</article>
+					</div>
+					<div class="magazine-column">
+						<article class="article">
+							<figure class="article-img">
+								<img src="./assets/img/leo.png" alt="Software Engineering Courses" />
+							</figure>
+							<h2 class="article-title article-title--medium">
+								<a href="#" class="article-link">Unleashing Creativity: iCET Partners with Leo Club of University of Moratuwa for Dev{Thon} 1.0</a>
+							</h2>
+							<div class="article-excerpt">
+								<p>iCET is proud to announce its partnership with the Leo Club of University of Moratuwa for the highly anticipated Dev{Thon} 1.0 competition. Dev{Thon} 1.0 is a dynamic web development competition designed to challenge and inspire aspiring developers across Sri Lanka to showcase their skills and creativity in full-stack web development.</p>
+								<p>The competition, organized by the Leo Club of University of Moratuwa, aims to promote innovation and creativity in the field of web development while providing a platform for students to showcase their talents and learn from their peers. With every line of code, participants have the opportunity to become better developers and make their mark in the industry.
+								</p>
+								<p>
+									Website development is a valuable skill for undergraduates to learn, offering them the chance to develop professional skills that will benefit them in their future careers. By participating in Dev{Thon} 1.0, students not only enhance their digital skills but also build their portfolios, establish personal brands, and network with potential employers and collaborators.
+								</p>
+								<p>
+									iCET's partnership with the Leo Club of University of Moratuwa as a platinum sponsor underscores its commitment to nurturing young entrepreneurial talent in Sri Lanka. By supporting initiatives like Dev{Thon} 1.0, iCET aims to empower the next generation of developers and foster innovation in the tech industry.
+								</p>
+								<p>
+									Dev{Thon} 1.0 concluded successfully on April 29, 2024, marking a milestone in the journey of young undergraduate entrepreneurs in Sri Lanka. As the competition draws to a close, participants can take pride in their achievements and look forward to the exciting opportunities that lie ahead in their web development careers.</p>
+							</div>
+							<!-- <div class="article-author">
+								<div class="article-author-img">
+									<img src="" />
+								</div>
+								<div class="article-author-info">
+									<dl>
+										<dt>James Robert</dt>
+										<dd>Editor</dd>
+									</dl>
+								</div>
+							</div> -->
+						</article>
+					</div>
+					<div class="magazine-column">
+						<article class="article">
+							<figure class="article-img">
+								<img src="./assets/img/bmich.jpg" alt="Software Engineering Courses" />
+							</figure>
+							<h2 class="article-title article-title--small">
+								<a href="#" class="article-link">Guiding AL Students: Exploring Career Pathways at BMICH Seminar</a>
+							</h2>
+							<div class="article-creditation">
+								<p>A highly informative seminar took place at BMICH, aimed at supporting students who have completed their Advanced Level (AL) examinations in exploring potential career pathways. Certified trainer, Mr. Ajith Jayawardhana, hosted the session, sharing his extensive knowledge and experience with the attendees.
+
+									The seminar was meticulously designed to offer valuable guidance and insights, assisting students in making well-informed decisions about their future careers.</p>
+							</div>
+						</article>
+						<article class="article">
+							<figure class="article-img">
+								<img src="./assets/img/Highly-Qualified-Faculty.jpg" alt="Software Engineering Courses" />
+							</figure>
+							<h2 class="article-title article-title--small">
+
+								<a href="#" class="article-link">Interactive Viva Sessions</a>
+							</h2>
+							<div class="article-creditation">
+								<p>At ICET, we believe in providing our students with a holistic and immersive learning experience that goes beyond traditional classroom instruction. As part of our commitment to excellence, we conduct Viva sessions periodically.
+								</p>
+								<p id="industry" style="display: none;">
+									These Viva sessions play a vital role in the educational journey of our students, allowing them to demonstrate their knowledge and practical skills to a panel of expert lecturers and industry professionals.
+									<br> <br>
+									Unlike written exams, which primarily test memorization and recall, Viva sessions assess a student's depth of understanding, critical thinking skills, and ability to apply theoretical concepts to real-world scenarios.
+									<br> <br>
+									In our programs, Viva sessions serve as a platform for students to showcase their knowledge and practical know-how acquired throughout the course. Whether it's discussing coding techniques, explaining algorithmic concepts, or presenting project prototypes, Viva sessions allow students to demonstrate their mastery of the material and receive constructive feedback from our expert panel.
+									<br> <br>
+									By providing a platform for students to demonstrate their knowledge, receive expert feedback, and engage with industry professionals, these sessions play a crucial role in preparing our students for the challenges and opportunities that lie ahead in their software development careers.
+
+								</p>
+
+								<p class="text-success text-end" id="industryB">+ Read More</p>
+							</div>
+						</article>
+					</div>
+					<div class="magazine-column">
+						<article class="article">
+							<figure class="article-img">
+								<img class="img-fluid w-50 mx-auto" src="./assets/img/IndustryMinds.png" alt="Software Engineering Courses" />
+
+							</figure>
+							<h2 class="article-title article-title--medium">
+								<a href="#" class="article-link">iCET Industry Minds Program!</a>
+							</h2>
+							<div class="article-excerpt">
+								<p>At iCET, we believe in nurturing talent and providing our students with opportunities to showcase their skills and innovations. The recent Industry Minds event was a testament to this commitment, as we witnessed our students excel in presenting their industry projects and receiving recognition for their remarkable performances.</p>
+								<p>Congratulations are in order for all the brilliant students who participated in the Industry Minds event! Their dedication, hard work, and innovative thinking were truly inspiring to witness. Each presentation reflected not technical expertise but also the passion for making a difference in the industry.</p>
+
+								<div class="row pt-3">
+									<div class="col-6 p-2"><img src="./assets/img/industryPre.jpg" class="img-fluid" alt=""></div>
+									<div class="col-6 p-2"><img src="./assets/img/454818922_480363094948533_2821818939629323169_n.jpg" class="img-fluid" alt=""></div>
+									<div class="col-6 p-2"><img src="./assets/img/industryPre2.jpg" class="img-fluid" alt=""></div>
+									<div class="col-6 p-2"><img src="./assets/img/industryPre3.jpg" class="img-fluid" alt=""></div>
+								</div>
+							</div>
+							<div class="article-author">
+								<!-- <div class="article-author-img">
+									<img src="https://assets.codepen.io/285131/author-2.png" />
+								</div>
+								<div class="article-author-info">
+									<dl>
+										<dt>James Robert</dt>
+										<dd>Editor</dd>
+									</dl>
+								</div>
+							</div> -->
+						</article>
+						<!-- <article class="article">
+							<small class="article-category">
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="22" viewBox="0 0 28 22">
+									<defs>
+										<clipPath id="clip-headphones">
+											<rect width="28" height="22" />
+										</clipPath>
+									</defs>
+									<g id="headphones" clip-path="url(#clip-headphones)">
+										<g id="Group_2" data-name="Group 2" transform="translate(-3680 -609)">
+											<path id="Subtraction_1" data-name="Subtraction 1" d="M5,12H5A5.274,5.274,0,0,1,0,6.5,5.274,5.274,0,0,1,5,1V12Z" transform="translate(3680 619)" />
+											<rect id="Rectangle_18" data-name="Rectangle 18" width="2" height="11" transform="translate(3686 620)" />
+											<path id="Subtraction_5" data-name="Subtraction 5" d="M1.243,12H.045C.015,11.67,0,11.334,0,11A11,11,0,0,1,18.778,3.222,10.925,10.925,0,0,1,22,11c0,.331-.015.667-.045,1h-1.2a14.108,14.108,0,0,0-2.685-6.241A8.982,8.982,0,0,0,11,2,8.982,8.982,0,0,0,3.929,5.759,14.109,14.109,0,0,0,1.243,12Z" transform="translate(3683 609)" />
+											<path id="Subtraction_6" data-name="Subtraction 6" d="M5,0H5A5.274,5.274,0,0,0,0,5.5,5.274,5.274,0,0,0,5,11V0Z" transform="translate(3708 631) rotate(180)" />
+											<rect id="Rectangle_23" data-name="Rectangle 23" width="2" height="11" transform="translate(3700 620)" />
+											<path id="Path_8" data-name="Path 8" d="M.156-.031,2.125-1.687,2,2H0Z" transform="translate(3683 619)" />
+											<path id="Path_9" data-name="Path 9" d="M1.969-.031,0-1.687.125,2h2Z" transform="translate(3702.875 619)" />
+										</g>
+									</g>
+								</svg>
+								<span>Post Reports / Podcast</span>
+							</small>
+							<h2 class="article-title article-title--medium">
+								<a href="#" class="article-link">Things to Do After 6 P.M Will Enrich <mark class="mark mark--tertiary">Your Life</mark></a>
+							</h2>
+							<div class="article-podcast-player">
+								<button class="podcast-play-button">
+									<svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#000000" viewBox="0 0 256 256">
+										<rect width="256" height="256" fill="none"></rect>
+										<path d="M232.3125,114.34375,88.34375,26.35937A15.99781,15.99781,0,0,0,64,40.00781V215.99219a16.00521,16.00521,0,0,0,24.34375,13.64843L232.3125,141.65625a16.00727,16.00727,0,0,0,0-27.3125Z"></path>
+									</svg>
+								</button>
+								<div class="podcast-progression">
+
+								</div>
+								<span class="podcast-time">23:45</span>
+							</div>
+							<div class="article-podcast-info">
+								Apple Podcasts, Google Podcasts, Stitcher
+							</div>
+							<div class="article-author">
+								<div class="article-author-img">
+									<img src="https://assets.codepen.io/285131/author-3.png" />
+								</div>
+								<div class="article-author-info">
+									<dl>
+										<dt>David Sherof</dt>
+										<dd>Reporter</dd>
+									</dl>
+								</div>
+							</div>
+						</article> -->
+					</div>
+				</div>
+			</main>
+		</main>
+		<program>
+			<div class="row">
+				<div class="col-lg-4 col-md-12 bg-white d-none d-lg-block">
+					<div data-aos="fade-up" data-aos-duration="3000">
+						<img src="./assets/img/midSec.png" class="img-fluid mx-auto d-block p-2" alt="Software Engineering Sri Lanka">
+					</div>
+				</div>
+				<div class="col-lg-5 col-md-7 g-0" style="background-color: #fbfcfc;">
+					<div class="m-5 text-dark pb-4">
+						<h4 class="philosopher-bold fs-4">iCD - iCET Certified Developer</h4>
+						<hr>
+						<p style="text-align: justify;">
+							iCD – iCET Certified Developer is a comprehensive program that is designed to prepare individuals for a professional career in the IT Software Industry. The course is targeted towards IT graduates, non-IT graduates or professionals and anyone who is currently employed and looking to start or improve their career in the IT Software Industry.
+							iCD is available in two modes, online and physical learning. The online option allows students to complete the program virtually under the guidance of a panel of esteemed lecturers. The physical learning option offers students the opportunity to learn and interact with lecturers and peers in our sophisticated labs. Upon completion of the iCD certification, students will be equipped with analytical skills, design skills and the ability to implement practical self-projects resulting in them being 100% industry ready. If you’re looking to start or improve your career in the IT Software Industry, the iCD - iCET Certified Developer Program is the best choice for you
+						</p>
+						<a class="d-flex float-end btn-success text-white btn border-0 rounded-2" href="./icd.php" aria-label="iCET Certified Developer">MORE DETAILS<i class="ms-3 pt-1 fa-solid fa-arrow-right"></i></a>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-5 bg-dark g-0">
+					<div class="m-5 text-light pb-4">
+						<h4 class="philosopher-bold">iCM - iCET Certified Master</h4>
+						<hr>
+						<p style="text-align: justify;">
+							iCM (iCET Certified Master) program is designed to empower you with the practical skills and knowledge required to excel in the software industry. You will gain hands-on experience with a wide range of technologies and frameworks allowing you to gain the skill set required to develop your own desktop/mobile apps, responsive websites or even enterprise scale applications.
+						</p>
+						<a class="d-flex float-end btn-success text-white btn border-0 rounded-2" href="./icm.php" aria-label="iCET Certified Developer">MORE DETAILS<i class="ms-3 pt-1 fa-solid fa-arrow-right"></i></a>
+
+					</div>
+
+				</div>
+			</div>
+		</program>
+
+		<!-- <div class="container-fluid" style="background-color: #00984a;">
+			<div class="row">
+				<div class="col-md-12"> <br> </div>
+			</div>
+		</div> -->
+				<script>
+
+		</script>
+
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12 mt-4 mx-3">
+
+					<h3 class="text-uppercase philosopher-regular pt-3" style="color:#233857; text-align:justify;">Every Student Has Their Own Success Story: Work for Yours</h3>
+					<p class="fs-6 text-orange">Every student has their own unique journey toward success. With dedication, hard work, and the right guidance, your story can be just as inspiring.
+						Find your path, overcome challenges, and work towards your dreams.
+						Remember, your success story is waiting to be written!</p>
+
+				</div>
+			</div>
+		</div>
+		<div class="bg-light">
+			<section id="carousel">
+				<div class="carousel">
+					<div class="gallery">
+						<div class="item item-1" id="one">
+						</div>
+						<div class="item item-2"></div>
+						<div class="item item-3"></div>
+						<div class="item item-4"></div>
+						<div class="item item-5"></div>
+						<div class="item item-6"></div>
+						<div class="item item-7"></div>
+						<div class="item item-8"></div>
+						<div class="item item-9"></div>
+						<!-- <div class="item item-10"></div>
+							<div class="item item-11"></div>
+							<div class="item item-12"></div> -->
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<div class="container py-5">
+			<div class="row">
+				<div class="col-md-12 my-2">
+				<h3 class="text-uppercase philosopher-regular pt-3 fw-bolder" style="color:#233857; text-align:justify;">Hear From Our Students</h3>
+				</div>
+				<div class="col-md-3 text-center my-3">
+				<iframe width="306" height="175" src="https://www.youtube.com/embed/PdOe-WEAqC8"  loading="lazy"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				</div>
+				<div class="col-md-3 text-center my-3">
+				<iframe width="306" height="175" src="https://www.youtube.com/embed/SGTEpfeS4Ks" loading="lazy" title="𝟕 𝐌𝐨𝐧𝐭𝐡𝐬, 𝟏 𝐃𝐫𝐞𝐚𝐦: 𝐍𝐨𝐚𝐡 𝐒𝐡𝐚𝐧&#39;𝐬 𝐐𝐮𝐢𝐜𝐤 𝐑𝐢𝐬𝐞 𝐭𝐨 𝐒𝐨𝐟𝐭𝐰𝐚𝐫𝐞 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				</div>
+				<div class="col-md-3 text-center my-3">
+				<iframe width="306" height="175" src="https://www.youtube.com/embed/jmy-bVBOnfM" loading="lazy" title="Meet Nuwin Winwath,  who&#39;s paving his way to success with iCET!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				</div>
+				<div class="col-md-3 text-center my-3">
+				<iframe width="306" height="175" src="https://www.youtube.com/embed/FvYG8t1w7xM" loading="lazy" title="Meet Thisuka Mahiru, who&#39;s paving his way to success with iCET!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				</div>
+				<div class="col-md-3 text-center my-3">
+				<iframe width="306" height="175" src="https://www.youtube.com/embed/U675GxHYuWo" loading="lazy" title="Meet Akindu Ramsith, who&#39;s paving his way to success with iCET!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				</div>
+				<div class="col-md-3 text-center my-3">
+				<iframe width="306" height="175" src="https://www.youtube.com/embed/xJQdTqDNfGo" loading="lazy" title="Meet Sethum Vidmal, who&#39;s paving his way to success with iCET!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				</div>
+				<div class="col-md-3 text-center my-3">
+				<iframe width="306" height="175" src="https://www.youtube.com/embed/JUVut7xkMCk" loading="lazy" title="Meet Havindu Hesara, who&#39;s paving his way to success with iCET!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				</div>
+				<div class="col-md-3 text-center my-3">
+				<iframe width="306" height="175" src="https://www.youtube.com/embed/nTsChBblxyk" loading="lazy" title="Janith&#39;s journey from QS degree to full-stack Developer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+		<!-- //modal -->
+		<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+			<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body">
+							...
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-primary">Understood</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="py-5" style="background-color: #233857;">
+			<!-- <div class="container">
+				<div class="row px-2 mb-2">
+					<div class="col-md-3 pt-2 bg-success border-success border-2 border-bottom">
+						<h5 class="text-light text-uppercase">Best Reasons to Join Us</h5>
+					</div>
+					<div class="col-md-9 border-success border-2 border-bottom">
+
+					</div>
+				</div>
+				<div class="row row-cols-1 row-cols-md-4 g-4">
+					<div class="col">
+						<div class="card">
+							<img src="./assets/img/Highly-Qualified-Faculty.jpg" class="card-img-top p-2" style="border-radius: 15px;" alt="Smath Path to Start a Software Engineering Degree">
+							<div class="card-body">
+								<h5 class="card-title px-3 py-1 text-white" style="background-color: #233857; border-radius:10px;">Card title</h5>
+								<img src="./Rectangle 7.svg" class="img-fluid w-50" alt="Smath Path to Start a Software Engineering Degree">
+								<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+								<div class="text-end text-muted text-uppercase text-dark mt-3"><a href="./services.php#" class="text-orange btn btn-sm">more
+										+</a></div>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card">
+							<img src="./assets/img/StudentSupportServices.webp" class="card-img-top p-2" style="border-radius: 15px;" alt="Smath Path to Start a Software Engineering Degree">
+							<div class="card-body">
+								<h5 class="card-title px-3 py-1 text-white" style="background-color: #233857; border-radius:10px;">Card title</h5>
+								<img src="./Rectangle 7.svg" class="img-fluid w-50" alt="Smath Path to Start a Software Engineering Degree">
+								<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+								<div class="text-end text-muted text-uppercase text-dark mt-3"><a href="./services.php#" class="text-orange btn btn-sm">more
+										+</a></div>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card">
+							<img src="./assets/img/Up-to-date-Curriculum.jpg" class="card-img-top p-2" style="border-radius: 15px;" alt="Smath Path to Start a Software Engineering Degree">
+							<div class="card-body">
+								<h5 class="card-title px-3 py-1 text-white" style="background-color: #233857; border-radius:10px;">Card title</h5>
+								<img src="./Rectangle 7.svg" class="img-fluid w-50" alt="Smath Path to Start a Software Engineering Degree">
+								<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+								<div class="text-end text-muted text-uppercase text-dark mt-3"><a href="./services.php#" class="text-orange btn btn-sm">more
+										+</a></div>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card">
+							<img src="./assets/img/StudentFriendlyCulture.webp" class="card-img-top p-2" style="border-radius: 15px;" alt="Smath Path to Start a Software Engineering Degree">
+							<div class="card-body">
+								<h5 class="card-title px-3 py-1 text-white" style="background-color: #233857; border-radius:10px;">Card title</h5>
+								<img src="./Rectangle 7.svg" class="img-fluid w-50" alt="Smath Path to Start a Software Engineering Degree">
+								<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+								<div class="text-end text-muted text-uppercase text-dark mt-3"><a href="./services.php#" class="text-orange btn btn-sm">more
+										+</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> -->
+
+			<div class="container my-5">
+				<div class="row px-2 mb-2">
+					<div class="col-md-3 pt-2 bg-success border-success border-2 border-bottom">
+						<h5 class="text-light text-uppercase pt-2">Best Reasons to Join Us</h5>
+					</div>
+					<div class="col-md-9 border-success border-2 border-bottom">
+
+					</div>
+				</div>
+				<div class="row row-cols-1 row-cols-md-4 g-4">
+					<div class="col">
+						<div class="py-1">
+							<img src="./assets/img/Highly-Qualified-Faculty.webp" class="card-img-top" alt="Software Engineering Courses">
+							<div class="py-2 ">
+								<h5 class="card-title text-eco mt-3  fw-bold fs-6 text-uppercase mt-1">Highly Qualified Faculty</h5>
+								<p class="text-light mt-3 pb-3 card-bdy" style="font-size: 14px; text-align: justify;">Selected for their academic prowess and professional experience, the lecturers & instructors at iCET impart both theoretical knowledge and real-world insights. Their dynamic approach at training, fosters creativity and critical thinking, preparing potential software engineers for complex challenges.
+								</p>
+								<!-- <div class="py-3 d-none d-sm-block"></div> -->
+								<!-- <div class="text-end text-light text-uppercase mt-1"><a href="./services.php#" class="text-eco btn btn-sm">more +</a></div> -->
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="py-1">
+							<img src="./assets/img/Up-to-date-Curriculum.jpg" class="card-img-top" alt="Software Engineering Classes">
+							<div class="py-2 ">
+								<h5 class="card-title fw-bold mt-3 fs-6 text-eco text-uppercase mt-1">Up-to-date Curriculum</h5>
+								<p class="text-light mt-3 pb-3 card-bdy" style="font-size: 14px; text-align: justify;">iCET, standing at the forefront of educational excellence, distinguishes itself by its commitment to consistently feature updated curricula, adjusted to align with the most recent industry trends. With a visionary approach, iCET consistently reevaluates and refines its curricula to ensure that students are equipped with the most pertinent and up-to-date knowledge and skills.
+
+								</p>
+								<!-- <div class="py-3 d-none d-sm-block"></div> -->
+								<!-- <div class="text-end text-light text-uppercase mt-1"><a href="./services.php#" class="text-eco btn btn-sm">more +</a></div> -->
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="py-1">
+							<img src="./assets/img/StudentSupportServices.webp" class="card-img-top" alt="Softeware Engineering Training">
+							<div class="py-2 ">
+								<h5 class="card-title text-eco fw-bold mt-3 fs-6 text-uppercase mt-1">Student Support Services
+								</h5>
+								<p class="text-light mt-3 pb-3 card-bdy" style="font-size: 14px; text-align: justify;">From enrolment till program completion, students are offered a helping hand to ensure they have a positive experience while navigating their path. One of the key aspects of this support system is the establishment of a dedicated Help Desk. This Help Desk serves as a central hub for students to seek assistance, guidance, and connect with their peers.
+
+								</p>
+								<!-- <div class="py-3 d-none d-sm-block"></div> -->
+								<!-- <div class="text-end text-light text-uppercase mt-1"><a href="./services.php#" class="text-eco btn btn-sm">more +</a></div> -->
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="py-1">
+							<img src="./assets/img/StudentFriendlyCulture.webp" class="card-img-top" alt="Software Engineering Degree">
+							<div class="py-2">
+								<h5 class="card-title fw-bold fs-6 mt-3 text-eco text-uppercase mt-1">Student Friendly Culture </h5>
+								<p class="text-light mt-3 pb-3 card-bdy" style="font-size: 14px; text-align: justify;">
+									At iCET, we are committed to fostering a supportive and inclusive environment where every student can excel. With a variety of engaging campus activities and comprehensive academic support, we celebrate diversity, encourage collaboration, and promote overall well-being.
+								</p>
+								<!-- <div class="py-3 d-none d-sm-block"></div> -->
+								<!-- <div class="text-end text-light text-uppercase mt-1"><a href="./services.php#" class="text-eco btn btn-sm">more +</a></div> -->
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</describe>
+
+	<blog>
+		<!-- blog -->
+		<div class="blog">
+			<div class="container py-5">
+				<h4>Latest blog posts</h4>
+
+				<ul>
+					<li class="post">
+						<div class="post__excerpt card">
+							<header class="card__header">
+								<h2>Node.js 22 is now available!</h2>
+								<time class="card__date" datetime="2018-08-26">Apr 24, 2024</time>
+							</header>
+							<p class="mt-2">We're excited to announce the release of Node.js 22! Highlights include require()ing ES modules, a WebSocket client, updates of the V8 JavaScript engine, and more!</p>
+							<div class="card__cta">
+								<a href="./blog.php" aria-label="Node.js New Update">Find Out Whats New on Node.js 22</a>
+							</div>
+						</div>
+						<img class="post__image" src="./assets/img/node.png" alt="Smath Path to Start a Software Engineering Degree">
+					</li>
+					<li class="post">
+						<div class="post__excerpt card">
+							<header class="card__header">
+								<h2>Has Angular Js reached the end of life? What is next? </h2>
+								<time class="card__date" datetime="2022-03-22">Mar 22, 2022</time>
+							</header>
+							<p class="mt-2">Released by Google in 2010, AngularJS reached end-of-life (EOL) status on December 31, 2021. </p>
+							<div class="card__cta">
+								<a href="#">Read more</a>
+							</div>
+						</div>
+						<img class="post__image" src="./assets/img/Angular_Banner.jpg" alt="Smath Path to Start a Software Engineering Degree">
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- end -->
+	</blog>
+	<!-- staff -->
+	<div class="text-center my-5">
+    <small class="text-muted"> MEET OUR TEACHERS AND ADMINISTRATORS </small><br>
+    <p class="fs-1">PANEL OF EXPERT LECTURERS</p>
+</div>
+<div class="container-fluid mb-5" style="background-color:#F2F3F4;">
+    <div class="container pb-2">
+        <div class="row">
+            <div class="col-md-3 p-2 mt-2">
+                <div class="border border-2 p-3">
+                    <a href="https://www.icet.lk/about-us#Founder-of-institute-of-java-and-Software-Engineering"><img src="./assets/img/drniroth.webp" class="img-fluid mb-3" alt="Founder of IJSE"></a>
+                    <hr style="color:#F39C12; border: 1px solid green;">
+                    <p class="fw-bold fs-5" style="color:#1b4f72;">Dr.Niroth Samarawikrama</p>
+                    <span style="font-size:0.9em; line-height: 0.9; display: block; ">
+                        <b>BSc in Applied Science,</b> <br>
+                        <small>University of Rajarata.</small> <br> <br>
+
+                        <b>Postgraduate Dip in Computer Science </b><br>
+                        <small>University of Colombo. </small><br> <br>
+
+                        <b>MSc in Information Technology,</b> <br>
+                        <small>University of Colombo.</small> <br> <br>
+
+                        <b>PhD in Computer Science,</b> <br>
+                        <small>University of Memphis (USA)</small>
+                    </span>
+                    <div class="pt-3 text-end">
+                        <i class="fa-brands fa-linkedin fa-xl text-muted me-3"></i>
+                        <i class="fa-brands fa-square-facebook fa-xl me-3 text-muted"></i>
+                        <i class="fa-brands fa-square-instagram fa-xl text-muted"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 p-2 mt-2">
+                <div class="border border-2 p-3">
+                    <img src="./assets/img/frank.webp" class="img-fluid mb-3" alt="Software Engineering Sri Lanka">
+                    <hr style="color:#F39C12; border: 1px solid green;">
+                    <p class="fw-bold fs-5" style="color:#1b4f72;">Frank Damiand</p>
+                    <span style="font-size:0.9em; line-height: 0.9; display: block; ">
+
+                        <b>Technical Lead / Engineering Manager, </b><br>
+                        <small>Sysco Labs</small><br> <br><br>
+
+                        <b>MSc in Software Engineering,</b> <br>
+                        <small>Kingston University(UK)</small> <br> <br>
+
+                        <b> &nbsp; </b> <br>
+                        <small> &nbsp; </small>
+                        <b> &nbsp; </b> <br>
+                        <small> &nbsp; </small> <br> <br>
+
+                    </span>
+                    <div class="pt-3 text-end">
+                        <i class="fa-brands fa-linkedin fa-xl text-muted me-3"></i>
+                        <i class="fa-brands fa-square-facebook fa-xl me-3 text-muted"></i>
+                        <i class="fa-brands fa-square-instagram fa-xl text-muted"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 p-2 mt-2">
+                <div class="border border-2 p-3">
+                    <img src="./assets/img/sarada.jpg" class="img-fluid mb-3" alt="Learn Java">
+                    <hr style="color:#F39C12; border: 1px solid green;">
+                    <p class="fw-bold fs-5" style="color:#1b4f72;">Sharada Marasinghe</p>
+                    <span style="font-size:0.9em; line-height: 0.9; display: block; ">
+                        <b>Bachelor of Information Technology</b> <br>
+                        <small>University Of Colombo (UG)</small> <br> <br>
+
+                        <b>Diploma in Software Engineering</b><br>
+                        <small>&nbsp;</small><br> <br>
+
+                        <b> &nbsp;</b> <br>
+                        <small> &nbsp; </small> <br> <br>
+
+                        <b> &nbsp; </b> <br>
+                        <small> &nbsp; </small>
+                    </span>
+                    <div class="pt-3 text-end">
+                        <i class="fa-brands fa-linkedin fa-xl text-muted me-3"></i>
+                        <i class="fa-brands fa-square-facebook fa-xl me-3 text-muted"></i>
+                        <i class="fa-brands fa-square-instagram fa-xl text-muted"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 p-2 mt-2">
+                <div class="border border-2 p-3">
+                    <img src="./assets/img/prathiba.webp" class="img-fluid mb-3" alt="Learn Angular">
+                    <hr style="color:#F39C12; border: 1px solid green;">
+                    <p class="fw-bold fs-5" style="color:#1b4f72;">Dewmini Weerasinghe</p>
+                    <span style="font-size:0.9em; line-height: 0.9; display: block; ">
+                        <b>Bachelor of Information Technology</b> <br>
+                        <small>University of Colombo (UG)</small> <br> <br>
+
+                        <b>Diploma in IT and Software Development </b><br>
+                        <small>LTC Campus</small><br> <br>
+
+                        <b>Diploma in Teaching,</b> <br>
+                        <small>Lyceum Campus</small> <br>
+
+                        <b> &nbsp;</b> <br>
+                        <small> &nbsp; </small>
+                    </span>
+                    <div class="pt-3 text-end">
+                        <i class="fa-brands fa-linkedin fa-xl text-muted me-3"></i>
+                        <i class="fa-brands fa-square-facebook fa-xl me-3 text-muted"></i>
+                        <i class="fa-brands fa-square-instagram fa-xl text-muted"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+	<!-- staff -->
+	<footer class="bg-light pt-5" style="margin-bottom:-100px; ">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2">
+					<img src="./assets/img/LOGO DESIGN.png" alt="">
+				</div>
+				<div class="col-md-4">
+					<div class="py-3">
+						<br>
+						<p>At iCET, we believe in the power of education to transform lives and uplift communities. That's why we are committed to our social responsibility initiatives, striving to make a positive impact beyond the realm of software education. We are dedicated in contributing to the betterment of society. Join us as we work towards a brighter future for all.</p>
+					</div>
+				</div>
+				<div class="col-md-2 px-3">
+					<h6 class="text-uppercase flink">Information</h6>
+					<ul style="font-size:smaller; " class="pt-2 a">
+						<li><a class="flink" href="./">Home</a></li>
+						<li><a class="flink" href="https://www.icet.lk/about-us">About Us</a></li>
+						<li><a class="flink" href="https://www.icet.lk/icm-icet-certified-master">iCET Certified Master</a></li>
+						<li><a class="flink" href="https://www.icet.lk/icd-icet-certified-developer">iCET Certified Developer</a></li>
+					</ul>
+				</div>
+				<div class="col-md-2 px-3">
+					<h6 class="text-uppercase flink">Student Life</h6>
+					<ul style="font-size:smaller; " class="pt-2 a">
+						<li><a class="flink" href="">Research</a></li>
+						<li><a class="flink" href="">Innovations</a></li>
+						<li><a class="flink" href="">Events</a></li>
+						<li><a class="flink" href="">Blogs</a></li>
+					</ul>
+				</div>
+				<div class="col-md-2 px-3">
+					<h6 class="text-uppercase flink">Contact Us</h6>
+					<ul style="font-size:smaller; " class="pt-2 a">
+						<li class="flink">223 A 1/2, Galle Road, <br>
+							Panadura, <br>
+							Sri Lanka.</li>
+					</ul>
+				</div>
+				<div class="col-md-12">
+					<hr>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="container">
+						<div class="row my-4 mb-2">
+							<div class="col-md-8">
+								<h4>Have Any Questions?</h4>
+								<p>Enter your email address and we will get back to you as soon as possible
+								</p>
+							</div>
+							<div class="col-md-4">
+								<form action="" method="post">
+									<div class="row">
+										<div class="col-md-8 mt-2">
+											<input type="email" name="" class="form-control-sm form-control " style="background-color:#f8f9fa;" id="" placeholder="Enter email here">
+										</div>
+										<div class="col-md-4 mt-2">
+											<button type="submit" class="btn btn-sm btn-success form-control  form-control-sm ">submit</button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<hr>
+					<div class="container">
+						<p style="font-size: smaller;"> &copy; 2024 iCET. All Rights Reserved </p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>	<!-- Bootstrap JavaScript Libraries -->
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="./assets/js/bootstrap.js"></script>
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+	<script>
+		AOS.init();
+	</script>
+	<!-- <script src="./assets/js/financial-aid.js"></script> -->
+	<script>
+		$("li").hover(
+			function() {
+				$(this).find("span").stop().animate({
+					width: "100%",
+					opacity: "1",
+				}, 400, function() {})
+			},
+			function() {
+				$(this).find("span").stop().animate({
+					width: "0%",
+					opacity: "0",
+				}, 400, function() {})
+			}
+		);
+		$(document).ready(function() {
+			$("#alphaB").click(function() {
+				$("#alpha").toggle();
+				if ($(this).text() == "+ Read More") {
+					$(this).text("- Collapse");
+				} else {
+					$(this).text("+ Read More");
+				}
+			});
+		});
+		$(document).ready(function() {
+			$("#industryB").click(function() {
+				$("#industry").toggle();
+				if ($(this).text() == "+ Read More") {
+					$(this).text("- Collapse");
+				} else {
+					$(this).text("+ Read More");
+				}
+			});
+		});
+	</script>
+</body>
+
+</html>
