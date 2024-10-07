@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Institute Of Computer Engineering Technology</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/Favicon/favicon-16x16.png">
+    <link rel="manifest" href="./img/favicon/site.webmanifest">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
+
+    <style>
+        /* Hover effect with transition using ::before */
+        .nav-link {
+            position: relative;
+            display: inline-block;
+            font-family: sans-serif;
+            padding: 10px 5px;
+        }
+
+        .nav-link::before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            left: 0;
+            bottom: 0;
+            background-color: #00ff7b;
+            transition: width 0.4s ease;
+        }
+
+        .nav-link:hover::before {
+            width: 100%;
+        }
+
+        /* Active link underline */
+        .nav-link.active::before {
+            width: 100%;
+        }
+
+        /* Ensure the navbar background and brand are styled properly */
+        .navbar-dark .navbar-brand img {
+            visibility: hidden;
+        }
+
+        .navbar-brand img.d-none.d-lg-block {
+            position: absolute;
+            z-index: 1;
+            visibility: visible;
+        }
+
+        /* Custom Scrollbar CSS */
+        /* For WebKit browsers (Chrome, Safari) */
+        ::-webkit-scrollbar {
+            width: 12px;
+            height: 12px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: teal;
+        }
+
+        /* For Firefox */
+        * {
+            scrollbar-width: thin;
+            scrollbar-color: teal transparent;
+        }
+
+        .offer-section .nav a.accordion-link {
+            width: 100%;
+            border-radius: 10px;
+            display: flex;
+            background: #e0f7f1;
+            transition: 0.5s;
+            color: #000000;
+            text-decoration: none;
+            text-transform: none;
+            letter-spacing: normal;
+        }
+
+        .offer-section .nav a.accordion-link.active {
+            background: #20c997;
+            color: white;
+            text-decoration: none;
+        }
+
+        .offer-section .nav a.accordion-link h5 {
+            transition: 0.5s;
+            color: #000000;
+        }
+
+        .offer-section .nav a.accordion-link.active h5 {
+            color: white;
+        }
+
+        .offer-section .nav a.accordion-link:hover {
+            background: #cce7e4;
+            color: #000000;
+        }
+
+        .offer-section .nav a.accordion-link.active:hover {
+            background: #20c997;
+            color: white;
+        }
+
+        .offer-section .tab-pane .row .col-md-7 img {
+            margin-left: -20px;
+            width: 100%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="fixed-top">
+
+        <!-- navbar -->
+        <nav class="navbar navbar-inverse navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand " aria-label="Smart path to start your software engineering career" href="./">
+                    <img src="img/iCETlogoBNW.png" class="px-2" width="60px" alt="">
+                </a>
+                <img src="assets/img/LOGO DESIGN.png" class="px-2 d-none d-lg-block" width="80px" alt="">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item me-3">
+                            <a class="nav-link" aria-current="page" href="../index.html"><b>Home</b></a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link" href="../pages/about.html"><b>About</b></a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link active" href="../pages/blogs.html"><b>Blogs</b></a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link" href=""><b>Research and Innovation</b></a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link" href="../pages/contact.html"><b>Contact Us</b></a>
+                        </li>
+                    </ul>
+                    <span class="navbar-text">
+                        <a href="#" target="_blank" class="btn btn-sm btn-success text-uppercase fw-light"><b>Student
+                                Portal</b></a>
+                    </span>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main class="py-5" style="margin-top: 60px;">
+
+        <main class="responsive-wrapper">
+            <div class="container my-4 text-center">
+                <h1 class="text-uppercase">Blog Posts</h1>
+                <hr class="w-25 mx-auto">
+            </div>
+            <div class="magazine-layout">
+                <div class="magazine-column">
+                    <article class="article">
+                        <figure class="article-img">
+                            <img src="./assets/img/studay.jpg" alt="Software Engineering Courses" />
+                        </figure>
+                        <h2 class="article-title article-title--large">
+                            <a href="#" class="article-link">
+                                iCET Partnership with Generation Alpha: Guiding Sri Lankan Youth Towards Innovation
+                                and Entrepreneurship</a>
+                        </h2>
+                        <div class="article-excerpt">
+                            <p>
+                                We are thrilled to announce our partnership with Generation Alpha, a dynamic
+                                initiative spearheaded by the visionary entrepreneur Miuli Kalubowila. Under her
+                                leadership as the founder and CEO, Generation Alpha is dedicated to fostering
+                                education innovation
+                                and entrepreneurship among Sri Lankan youth.
+
+                            </p>
+                            <p id="alpha" style="display: none;">
+                                At iCET, we are committed to providing our students with the tools and resources
+                                they need to thrive in the ever-evolving landscape of the software industry. Through
+                                this partnership, we aim to empower our students to bring their innovative ideas to
+                                life
+                                and translate them into real-world applications.
+                                <br> <br> One of the key objectives of our collaboration with Generation Alpha is to
+                                create a supportive ecosystem where young innovators can access mentorship,
+                                resources, and networking opportunities. By connecting
+                                students with industry experts, investors, and mentors, we are providing them with
+                                invaluable insights and guidance to help them succeed in their entrepreneurial
+                                endeavours.
+                                <br> <br> Additionally, our partnership with Generation Alpha offers students the
+                                opportunity to develop essential leadership and soft skills that are vital for
+                                success in the software industry. Through workshops, seminars,
+                                and hands-on training sessions, students will gain practical experience and enhance
+                                their professional portfolios, preparing them for fulfilling careers in the field of
+                                software engineering.
+                                <br> <br> We are excited about the possibilities that this partnership holds for our
+                                students and are confident that it will enable them to reach new heights of
+                                innovation and excellence. Together with Generation Alpha,
+                                we are shaping the future of software engineering in Sri Lanka and beyond.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="article">
+                        <figure class="article-img">
+                            <img src="./assets/img/awrudu.JPG" alt="Software Engineering Courses" />
+                        </figure>
+                        <h2 class="article-title article-title--medium">
+                            <a href="#" class="article-link">Embracing Traditions and Celebrating Unity: iCET's New
+                                Year Festival 2024</a>
+                        </h2>
+                        <div class="article-creditation">
+                            <p>At iCET, we believe in the power of tradition, community, and celebration. That's why
+                                we came together as one big family to ring in the Sinhala and Tamil New Year with
+                                our annual "Soorya Prasanwadaya" festival. Held at
+                                the municipal ground in Panadura, this joyous event was a testament to the rich
+                                cultural heritage and spirit of unity that defines our institute.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="magazine-column">
+                    <article class="article">
+                        <figure class="article-img">
+                            <img src="./assets/img/leo.png" alt="Software Engineering Courses" />
+                        </figure>
+                        <h2 class="article-title article-title--medium">
+                            <a href="#" class="article-link">Unleashing Creativity: iCET Partners with Leo Club of
+                                University of Moratuwa for Dev{Thon} 1.0</a>
+                        </h2>
+                        <div class="article-excerpt">
+                            <p>iCET is proud to announce its partnership with the Leo Club of University of Moratuwa
+                                for the highly anticipated Dev{Thon} 1.0 competition. Dev{Thon} 1.0 is a dynamic web
+                                development competition designed to challenge and
+                                inspire aspiring developers across Sri Lanka to showcase their skills and creativity
+                                in full-stack web development.</p>
+                            <p>The competition, organized by the Leo Club of University of Moratuwa, aims to promote
+                                innovation and creativity in the field of web development while providing a platform
+                                for students to showcase their talents and learn
+                                from their peers. With every line of code, participants have the opportunity to
+                                become better developers and make their mark in the industry.
+                            </p>
+                            <p>
+                                Website development is a valuable skill for undergraduates to learn, offering them
+                                the chance to develop professional skills that will benefit them in their future
+                                careers. By participating in Dev{Thon} 1.0, students not only enhance their digital
+                                skills
+                                but also build their portfolios, establish personal brands, and network with
+                                potential employers and collaborators.
+                            </p>
+                            <p>
+                                iCET's partnership with the Leo Club of University of Moratuwa as a platinum sponsor
+                                underscores its commitment to nurturing young entrepreneurial talent in Sri Lanka.
+                                By supporting initiatives like Dev{Thon} 1.0, iCET aims to empower the next
+                                generation
+                                of developers and foster innovation in the tech industry.
+                            </p>
+                            <p>
+                                Dev{Thon} 1.0 concluded successfully on April 29, 2024, marking a milestone in the
+                                journey of young undergraduate entrepreneurs in Sri Lanka. As the competition draws
+                                to a close, participants can take pride in their achievements and look forward to
+                                the
+                                exciting opportunities that lie ahead in their web development careers.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="magazine-column">
+                    <article class="article">
+                        <figure class="article-img">
+                            <img src="./assets/img/bmich.jpg" alt="Software Engineering Courses" />
+                        </figure>
+                        <h2 class="article-title article-title--small">
+                            <a href="#" class="article-link">Guiding AL Students: Exploring Career Pathways at BMICH
+                                Seminar</a>
+                        </h2>
+                        <div class="article-creditation">
+                            <p>A highly informative seminar took place at BMICH, aimed at supporting students who
+                                have completed their Advanced Level (AL) examinations in exploring potential career
+                                pathways. Certified trainer, Mr. Ajith Jayawardhana,
+                                hosted the session, sharing his extensive knowledge and experience with the
+                                attendees. The seminar was meticulously designed to offer valuable guidance and
+                                insights, assisting students in making well-informed decisions
+                                about their future careers.</p>
+                        </div>
+                    </article>
+                    <article class="article">
+                        <figure class="article-img">
+                            <img src="./assets/img/Highly-Qualified-Faculty.jpg" alt="Software Engineering Courses" />
+                        </figure>
+                        <h2 class="article-title article-title--small">
+
+                            <a href="#" class="article-link">Interactive Viva Sessions</a>
+                        </h2>
+                        <div class="article-creditation">
+                            <p>At ICET, we believe in providing our students with a holistic and immersive learning
+                                experience that goes beyond traditional classroom instruction. As part of our
+                                commitment to excellence, we conduct Viva sessions periodically.
+                            </p>
+                            <p id="industry" style="display: none;">
+                                These Viva sessions play a vital role in the educational journey of our students,
+                                allowing them to demonstrate their knowledge and practical skills to a panel of
+                                expert lecturers and industry professionals.
+                                <br> <br> Unlike written exams, which primarily test memorization and recall, Viva
+                                sessions assess a student's depth of understanding, critical thinking skills, and
+                                ability to apply theoretical concepts to real-world
+                                scenarios.
+                                <br> <br> In our programs, Viva sessions serve as a platform for students to
+                                showcase their knowledge and practical know-how acquired throughout the course.
+                                Whether it's discussing coding techniques, explaining algorithmic
+                                concepts, or presenting project prototypes, Viva sessions allow students to
+                                demonstrate their mastery of the material and receive constructive feedback from our
+                                expert panel.
+                                <br> <br> By providing a platform for students to demonstrate their knowledge,
+                                receive expert feedback, and engage with industry professionals, these sessions play
+                                a crucial role in preparing our students for the challenges
+                                and opportunities that lie ahead in their software development careers.
+
+                            </p>
+                        </div>
+                    </article>
+                </div>
+                <div class="magazine-column">
+                    <article class="article">
+                        <figure class="article-img">
+                            <img class="img-fluid w-50 mx-auto" src="./assets/img/IndustryMinds.png"
+                                alt="Software Engineering Courses" />
+
+                        </figure>
+                        <h2 class="article-title article-title--medium">
+                            <a href="#" class="article-link">iCET Industry Minds Program!</a>
+                        </h2>
+                        <div class="article-excerpt">
+                            <p>At iCET, we believe in nurturing talent and providing our students with opportunities
+                                to showcase their skills and innovations. The recent Industry Minds event was a
+                                testament to this commitment, as we witnessed our students
+                                excel in presenting their industry projects and receiving recognition for their
+                                remarkable performances.</p>
+                            <p>Congratulations are in order for all the brilliant students who participated in the
+                                Industry Minds event! Their dedication, hard work, and innovative thinking were
+                                truly inspiring to witness. Each presentation reflected
+                                not technical expertise but also the passion for making a difference in the
+                                industry.</p>
+
+                            <div class="row pt-3">
+                                <div class="col-6 p-2"><img src="./assets/img/industryPre.jpg" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-6 p-2"><img
+                                        src="./assets/img/454818922_480363094948533_2821818939629323169_n.jpg"
+                                        class="img-fluid" alt=""></div>
+                                <div class="col-6 p-2"><img src="./assets/img/industryPre2.jpg" class="img-fluid"
+                                        alt=""></div>
+                                <div class="col-6 p-2"><img src="./assets/img/industryPre3.jpg" class="img-fluid"
+                                        alt=""></div>
+                            </div>
+                        </div>
+                        <div class="article-author">
+                    </article>
+                </div>
+            </div>
+        </main>
+    </main>
+
+    <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block">
+                <span>Connect with our Social Networks</span>
+            </div>
+            <!-- Left -->
+
+            <!-- Right -->
+            <div class="font-size">
+                <a href="https://facebook.com/iCETSriLanka" class="me-4 text-reset" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.icet.lk/" class="me-4 text-reset" target="_blank">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="https://instagram.com/icet_srilanka/?hl=en" class="me-4 text-reset" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://linkedin.com/company/institute-of-computer-engineering-technology-icet"
+                    class="me-4 text-reset" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.youtube.com/@instituteofcomputerengineering" class="me-4 text-reset"
+                    target="_blank">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section>
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Logo and Text -->
+                    <div class="col-md-4 d-flex align-items-center mb-4">
+                        <img src="assets/img/LOGO DESIGN.png" alt="Company Logo" class="img-fluid"
+                            style="max-height: 180px; margin-right: 20px;">
+                        <p class="text-start">
+                            At iCET, we believe in the power of education to transform lives and uplift communities.
+                            That's why we are committed to our social responsibility initiatives, striving to make a
+                            positive impact beyond the realm of software education. We are dedicated to contributing to
+                            the betterment of society. Join us as we work towards a brighter future for all.
+                        </p>
+                    </div>
+
+                    <!-- Information Column -->
+                    <div class="col-md-2 col-lg-2 mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">Information</h6>
+                        <p><a href="../" class="text-reset">Home</a></p>
+                        <p><a href="../pages/about.html" class="text-reset">About Us</a></p>
+                        <p><a href="../courses/icm.html" class="text-reset">iCET Certified Master</a></p>
+                        <p><a href="../courses/icd.html" class="text-reset">iCET Certified Developer</a></p>
+                    </div>
+
+                    <!-- Student Life Column -->
+                    <div class="col-md-2 col-lg-2 mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">Student Life</h6>
+                        <p><a href="#!" class="text-reset">Research</a></p>
+                        <p><a href="" class="text-reset">Innovations</a></p>
+                        <p><a href="../pages/blogs.html" class="text-reset">Events</a></p>
+                        <p><a href="../pages/blogs.html" class="text-reset">Blogs</a></p>
+                    </div>
+
+                    <!-- Contact Column -->
+                    <div class="col-md-4 col-lg-3 mb-md-0 mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fas fa-map-marker-alt me-2"></i> Location
+                        </h6>
+                        <div class="google-maps">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.3875279493677!2d79.90491717475508!3d6.722477893273514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae247a4c04ae595%3A0x4060e3527ce41470!2siCET%20-%20Institute%20of%20Computer%20Engineering%20Technology!5e0!3m2!1ssi!2slk!4v1727282871390!5m2!1ssi!2slk"
+                                width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2024 Copyright:
+            <a class="text-reset fw-bold" href="">ICET</a>
+        </div>
+    </footer>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let tabs = ['#tabOne', '#tabTwo', '#tabThree', '#tabFour'];
+            let currentTab = 0;
+
+            function showNextTab() {
+                // Remove 'active' class from all tabs
+                tabs.forEach(function (tab) {
+                    document.querySelector(tab).classList.remove('active');
+                });
+
+                // Activate the current tab
+                document.querySelector(tabs[currentTab]).click();
+                document.querySelector(tabs[currentTab]).classList.add('active');
+
+                // Move to the next tab, loop back to the first one
+                currentTab = (currentTab + 1) % tabs.length;
+            }
+
+            // Automatically change tabs every 5 seconds
+            setInterval(showNextTab, 5000);
+        });
+    </script>
+
+</body>
+
+</html>

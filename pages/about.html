@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Institute Of Computer Engineering Technology</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/Favicon/favicon-16x16.png">
+    <link rel="manifest" href="./img/favicon/site.webmanifest">
+    <link href="./css/aboutcss/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@200;300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+    <link href="../assets/css/style.css" rel="stylesheet">
+
+    <style>
+        /* Hover effect with transition using ::before */
+        .nav-link {
+            position: relative;
+            display: inline-block;
+            font-family: sans-serif;
+            padding: 10px 5px;
+        }
+
+        .nav-link::before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            left: 0;
+            bottom: 0;
+            background-color: #00ff7b;
+            transition: width 0.4s ease;
+        }
+
+        .nav-link:hover::before {
+            width: 100%;
+        }
+
+        /* Active link underline */
+        .nav-link.active::before {
+            width: 100%;
+        }
+
+        /* Ensure the navbar background and brand are styled properly */
+        .navbar-dark .navbar-brand img {
+            visibility: hidden;
+        }
+
+        .navbar-brand img.d-none.d-lg-block {
+            position: absolute;
+            z-index: 1;
+            visibility: visible;
+        }
+
+        /* Custom Scrollbar CSS */
+        /* For WebKit browsers (Chrome, Safari) */
+        ::-webkit-scrollbar {
+            width: 12px;
+            height: 12px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: teal;
+        }
+
+        /* For Firefox */
+        * {
+            scrollbar-width: thin;
+            scrollbar-color: teal transparent;
+        }
+
+        /* Example content to enable scrolling */
+        .scrollable-content {
+            height: 300px;
+            overflow-y: scroll;
+            padding: 20px;
+            background: #fff;
+            border: 1px solid #ddd;
+        }
+
+        .rounded-circle-bottom {
+            border-top-right-radius: 300px;
+            border-top-left-radius: 300px;
+            margin-bottom: -7px;
+        }
+
+        .info-icon {
+            color: #39B54A !important;
+        }
+
+        .custom-text {
+            color: #1a4a82;
+            font-weight: bold;
+        }
+
+        .phone-info span {
+            font-size: 22px;
+            font-weight: bold;
+            color: #39B54A !important;
+        }
+
+        .fa-check-circle {
+            color: #39B54A !important;
+        }
+
+        .fa-phone-alt {
+            color: #1a4a82;
+        }
+
+        .fa-globe,
+        .fa-chalkboard-teacher {
+            color: #1a4a82;
+        }
+
+        .icon-section h5 {
+            margin-left: 10px;
+        }
+
+        .info-section p {
+            color: #1a4a82;
+        }
+
+        #about {
+            background: url("./assets/img/vnm.png") center top no-repeat fixed;
+            background-size: cover;
+            padding: 60px 0 40px 0;
+            position: relative;
+        }
+
+        #about::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.92);
+            z-index: 9;
+        }
+
+        #about .container {
+            position: relative;
+            z-index: 10;
+        }
+
+        #about .about-col {
+            background: #fff;
+            border-radius: 0 0 4px 4px;
+            box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+            margin-bottom: 20px;
+        }
+
+        #about .about-col .img {
+            position: relative;
+        }
+
+        #about .about-col .img img {
+            border-radius: 4px 4px 0 0;
+        }
+
+        #about .about-col .icon {
+            width: 64px;
+            height: 64px;
+            padding-top: 8px;
+            text-align: center;
+            position: absolute;
+            background-color: #20c997;
+            border-radius: 50%;
+            text-align: center;
+            border: 4px solid #fff;
+            left: calc(50% - 32px);
+            bottom: -30px;
+            transition: 0.3s;
+        }
+
+        #about .about-col i {
+            font-size: 36px;
+            line-height: 1;
+            color: #fff;
+            transition: 0.3s;
+        }
+
+        #about .about-col:hover .icon {
+            background-color: #fff;
+        }
+
+        #about .about-col:hover i {
+            color: #20c997;
+        }
+
+        #about .about-col h2 {
+            color: #000;
+            text-align: center;
+            font-weight: 700;
+            font-size: 20px;
+            padding: 0;
+            margin: 40px 0 12px 0;
+        }
+
+        #about .about-col h2 a {
+            color: #000;
+        }
+
+        #about .about-col h2 a:hover {
+            color: #20c997;
+        }
+
+        #about .about-col p {
+            font-size: 14px;
+            line-height: 24px;
+            color: #333;
+            margin-bottom: 0;
+            padding: 0 20px 20px 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="fixed-top">
+
+        <!-- navbar -->
+        <nav class="navbar navbar-inverse navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand " aria-label="Smart path to start your software engineering career" href="./">
+                    <img src="img/iCETlogoBNW.png" class="px-2" width="60px" alt="">
+                </a>
+                <img src="assets/img/LOGO DESIGN.png" class="px-2 d-none d-lg-block" width="80px" alt="">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item me-3">
+                            <a class="nav-link" aria-current="page" href="../"><b>Home</b></a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link active" href="./about.html"><b>About</b></a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link" href="./blogs.html"><b>Blogs</b></a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link" href="./offer.html"><b>Research and Innovation</b></a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link" href="./contact-us.html"><b>Contact Us</b></a>
+                        </li>
+                    </ul>
+                    <span class="navbar-text">
+                        <a href="#" target="_blank" class="btn btn-sm btn-success text-uppercase fw-light"><b>Student
+                                Portal</b></a>
+                    </span>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- About Start -->
+    <div class="container-fluid overflow-hidden py-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-xl-5 wow fadeInLeft" data-wow-delay="0.1s">
+                    <div class="bg-light rounded">
+                        <img src="./assets/img/students-in-library.jpg" class="img-fluid w-100"
+                            style="margin-bottom: -7px;" alt="Image">
+                        <img src="./assets/img/learning_student.jpg"
+                            class="img-fluid w-100 border-bottom border-5 border-primary"
+                            style="border-top-right-radius: 300px; border-top-left-radius: 300px;" alt="Image">
+                    </div>
+                </div>
+                <div class="col-xl-7 wow fadeInRight" data-wow-delay="0.3s">
+                    <h1 class="display-5 mb-4">About Us</h1>
+                    <p class="mb-4">Welcome to iCET, the Institute of Computer Engineering Technology, where we are
+                        dedicated to shaping aspiring individuals into skilled software engineers, equipping them with
+                        the expertise and knowledge needed to excel in the dynamic world of software development.
+
+                        At iCET, we understand the ever-evolving demands of the software industry. That's why we've
+                        designed an intensive and comprehensive training program that transforms enthusiastic learners
+                        into proficient software engineers in just few months.
+
+                        Dr. Niroth Samarawickckrama, our esteemed software engineering trainer, brings a wealth of
+                        knowledge and experience to our institute. With a deep passion for software engineering and a
+                        commitment to teaching, Dr. Samarawickckrama is the driving force behind our success. His
+                        guidance and expertise ensure that our students receive the finest education in the field.
+                    </p>
+                    <div class="row gy-4 align-items-center">
+                        <div class="col-12 col-sm-6 d-flex align-items-center">
+                            <i class="fas fa-chalkboard-teacher fa-3x text-secondary"></i>
+                            <h5 class="ms-4">
+                                <span class="counter-up" data-toggle="counter-up">20</span>+ Years of Expertise In
+                                Software Industry
+                            </h5>
+                        </div>
+                        <div class="col-12 col-sm-6 d-flex align-items-center">
+                            <i class="fas fa-globe fa-3x text-secondary"></i>
+                            <h5 class="ms-4">
+                                <span class="counter-up" data-toggle="counter-up">13000</span>+ Global Software
+                                Developers
+                            </h5>
+                        </div>
+                        <div class="col-8 col-md-9 mb-5">
+                            <p class="text-primary h6 mb-3"><i class="fa fa-check-circle text-secondary me-2"></i> 12
+                                months fast-track mastery course</p>
+                            <p class="text-primary h6 mb-3"><i class="fa fa-check-circle text-secondary me-2"></i> 6
+                                months industrial training</p>
+                            <p class="text-primary h6 mb-3"><i class="fa fa-check-circle text-secondary me-2"></i>
+                                Industry Placement</p>
+                            <p class="text-primary h6 mb-3"><i class="fa fa-check-circle text-secondary me-2"></i>
+                                Degree</p>
+                            <div class="d-flex flex-wrap align-items-center">
+                                <a id="phone-tada" href="" class="position-relative wow tada me-4">
+                                    <i class="fa fa-phone-alt text-primary fa-3x"></i>
+                                    <div class="position-absolute" style="top: 0; left: 25px;">
+                                        <span><i class="fa fa-comment-dots text-secondary"></i></span>
+                                    </div>
+                                </a>
+                                <div class="d-flex flex-column justify-content-center">
+                                    <span class="text-primary">Have any questions?</span>
+                                    <span class="text-secondary fw-bold fs-5" style="letter-spacing: 2px;">0705 805
+                                        805</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="about">
+        <div class="container">
+            <div class="row about-cols">
+                <div class="col-md-4 wow fadeInUp">
+                    <div class="about-col">
+                        <div class="img">
+                            <img src="assets/img/about-mission.jpg" alt="" class="img-fluid">
+                            <div class="icon"><i class="bi bi-speedometer2"></i></div>
+                        </div>
+                        <h2 class="title"><a href="#">Our Mission</a></h2>
+                        <p>To be the leader in global software education sector, by connecting individuals with the
+                            knowledge, skills, and intelligence to excel in the global software engineering industry.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="about-col">
+                        <div class="img">
+                            <img src="assets/img/about-plan.jpg" alt="" class="img-fluid">
+                            <div class="icon"><i class="bi bi-card-checklist"></i></div>
+                        </div>
+                        <h2 class="title"><a href="#">Our Plan</a></h2>
+                        <p>
+                            Our plan is to offer hands-on software engineering education, guided by expert mentors and
+                            global partnerships. We focus on real-world experience and career support, ensuring student
+                            success in the software industry.
+                    </div>
+                </div>
+
+                <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="about-col">
+                        <div class="img">
+                            <img src="assets/img/about-vision.jpg" alt="" class="img-fluid">
+                            <div class="icon"><i class="bi bi-eye"></i></div>
+                        </div>
+                        <h2 class="title"><a href="#">Our Vision</a></h2>
+                        <p>
+                            To be the leader in global software education sector, by connecting individuals with the
+                            knowledge, skills, and intelligence to excel in the global software engineering industry.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block">
+                <span>Connect with our Social Networks</span>
+            </div>
+            <!-- Left -->
+
+            <!-- Right -->
+            <div class="font-size" style="font-size: 2rem;">
+                <a href="https://facebook.com/iCETSriLanka" class="me-4 text-reset" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.icet.lk/" class="me-4 text-reset" target="_blank">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="https://instagram.com/icet_srilanka/?hl=en" class="me-4 text-reset" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://linkedin.com/company/institute-of-computer-engineering-technology-icet"
+                    class="me-4 text-reset" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.youtube.com/@instituteofcomputerengineering" class="me-4 text-reset"
+                    target="_blank">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section>
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Logo and Text -->
+                    <div class="col-md-4 d-flex align-items-center mb-4">
+                        <img src="assets/img/LOGO DESIGN.png" alt="Company Logo" class="img-fluid"
+                            style="max-height: 180px; margin-right: 20px;">
+                        <p class="text-start">
+                            At iCET, we believe in the power of education to transform lives and uplift communities.
+                            That's why we are committed to our social responsibility initiatives, striving to make a
+                            positive impact beyond the realm of software education. We are dedicated to contributing to
+                            the betterment of society. Join us as we work towards a brighter future for all.
+                        </p>
+                    </div>
+
+                    <!-- Information Column -->
+                    <div class="col-md-2 col-lg-2 mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">Information</h6>
+                        <p><a href="../" class="text-reset">Home</a></p>
+                        <p><a href="../pages/about.html" class="text-reset">About Us</a></p>
+                        <p><a href="../courses/icm.html" class="text-reset">iCET Certified Master</a></p>
+                        <p><a href="../courses/icd.html" class="text-reset">iCET Certified Developer</a></p>
+                    </div>
+
+                    <!-- Student Life Column -->
+                    <div class="col-md-2 col-lg-2 mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">Student Life</h6>
+                        <p><a href="#!" class="text-reset">Research</a></p>
+                        <p><a href="" class="text-reset">Innovations</a></p>
+                        <p><a href="../pages/blogs.html" class="text-reset">Events</a></p>
+                        <p><a href="../pages/blogs.html" class="text-reset">Blogs</a></p>
+                    </div>
+
+                    <!-- Contact Column -->
+                    <div class="col-md-4 col-lg-3 mb-md-0 mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fas fa-map-marker-alt me-2"></i> Location
+                        </h6>
+                        <div class="google-maps">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.3875279493677!2d79.90491717475508!3d6.722477893273514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae247a4c04ae595%3A0x4060e3527ce41470!2siCET%20-%20Institute%20of%20Computer%20Engineering%20Technology!5e0!3m2!1ssi!2slk!4v1727282871390!5m2!1ssi!2slk"
+                                width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2024 Copyright:
+            <a class="text-reset fw-bold" href="">ICET</a>
+        </div>
+    </footer>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script>
+        new WOW().init();
+
+        // Sticky Navbar
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 45) {
+                $('.nav-bar').addClass('sticky-top shadow-sm');
+            } else {
+                $('.nav-bar').removeClass('sticky-top shadow-sm');
+            }
+        });
+
+        // Facts counter
+        $('[data-toggle="counter-up"]').counterUp({
+            delay: 5,
+            time: 2000
+        });
+
+    </script>
+</body>
+
+</html>
